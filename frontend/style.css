@@ -1,0 +1,260 @@
+/* 🌈 BACKGROUND */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #00c9a7, #92fe9d);
+    color: white;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+/* TITLE */
+h1 {
+    font-size: 32px;
+    margin: 20px;
+}
+
+/* FORM BOX (GLASS EFFECT) */
+.form-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    width: 320px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+/* INPUT */
+.form-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* BUTTON */
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #00c9a7, #00b894);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* TABLE */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+/* HEADER */
+th {
+    background: rgba(0,0,0,0.3);
+    padding: 12px;
+}
+
+/* ROW */
+td {
+    padding: 10px;
+    background: rgba(255,255,255,0.2);
+}
+
+/* HOVER */
+tr:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+/* FILTER DROPDOWN */
+.filter {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+}
+/* CENTER LOGIN + REGISTER */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    font-family: Arial;
+}
+
+/* BOX */
+.center-box {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 15px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* INPUT */
+.center-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+.center-box button {
+    background: #11998e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center-box button:hover {
+    background: #0e7c73;
+}
+/* 🌙 DARK MODE FULL FIX */
+
+.dark {
+    background: #121212 !important;
+    color: #ffffff !important;
+}
+
+/* FORM BOX */
+.dark .form-box {
+    background: #1e1e1e;
+    color: white;
+}
+
+/* TABLE */
+.dark table {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark th {
+    background: #333;
+}
+
+.dark td {
+    border-bottom: 1px solid #444;
+}
+
+/* INPUTS */
+.dark input,
+.dark select {
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid #555;
+}
+
+/* BUTTON */
+.dark button {
+    background: #333;
+    color: white;
+}
+
+/* MODAL */
+.dark .modal {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+/* 🔥 POPUP STYLE */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background: linear-gradient(135deg, #00b09b, #96c93d);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    animation: popupFade 0.4s ease;
+}
+
+.popup-content h3 {
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    font-size: 16px;
+}
+
+.close-btn {
+    float: right;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* animation */
+@keyframes popupFade {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.popup-content{
+    background: white;
+    color: black;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 280px;
+    animation: popupAnim 0.3s ease;
+}
+
+@keyframes popupAnim{
+    from{
+        transform: scale(0.7);
+        opacity:0;
+    }
+    to{
+        transform: scale(1);
+        opacity:1;
+    }
+}

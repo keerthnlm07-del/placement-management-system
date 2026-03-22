@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="center-box">
+    <h2>Register</h2>
+
+    <input type="text" id="regUsername" placeholder="Username">
+    <input type="password" id="regPassword" placeholder="Password">
+
+    <button onclick="register()">Register</button>
+
+    <p>Already have account?</p>
+    <a href="login.html">Login</a>
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <h3 id="popupTitle"></h3>
+        <p id="popupText"></p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

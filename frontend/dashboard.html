@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎓 Placement Dashboard</h1>
+
+    <!-- ADD STUDENT -->
+    <div class="form-box">
+        <h2>Add Student</h2>
+
+        <input id="name" placeholder="Name">
+        <input id="email" placeholder="Email">
+        <input id="branch" placeholder="Branch">
+        <input id="cgpa" placeholder="CGPA">
+        <input type="file" id="resume" accept=".pdf,.doc,.docx">
+
+        <div class="btn-group">
+            <button onclick="addStudent()">Save</button>
+            <button onclick="logout()" class="logout">Logout</button>
+            <button onclick="toggleDarkMode()" class="darkbtn">🌙</button>
+        </div>
+    </div>
+
+    <!-- STUDENT TABLE -->
+    <div class="table-box">
+        <h2>Student List</h2>
+
+        <select id="filterStatus" onchange="loadStudents()" class="filter">
+            <option value="all">All Students</option>
+            <option value="placed">Placed</option>
+            <option value="notPlaced">Not Placed</option>
+        </select>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Branch</th>
+                    <th>CGPA</th>
+                    <th>Action</th>
+                    <th>Placement</th>
+                    <th>Recommend</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="studentTable"></tbody>
+        </table>
+    </div>
+
+    <!-- ✅ COMPANY BELOW STUDENT LIST -->
+    <div class="form-box">
+        <h2>Add Company</h2>
+
+        <input id="cname" placeholder="Company Name">
+        <input id="role" placeholder="Role">
+        <input id="package" placeholder="Package">
+
+        <button onclick="addCompany()">Add Company</button>
+    </div>
+
+    <div class="table-box">
+        <h2>Company List</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Package</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="companyTable"></tbody>
+        </table>
+    </div>
+
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <h3 id="popupTitle"></h3>
+        <p id="popupText"></p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
